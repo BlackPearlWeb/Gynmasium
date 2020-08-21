@@ -1,0 +1,1117 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+a,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+/***********************   Common CSS END   ************************/
+
+/***********************   Menu Part Start   ************************/
+
+.mainMenu {
+    background: rgba(0, 0, 0, 0.25);
+    height: 50px;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 99;
+    width: 100%
+}
+
+
+.mainMenu .navbar-brand {
+    width: 245px;
+    height: 70px;
+    background: #313131;
+    text-align: center;
+    padding-top: 10px !important;
+    transform: skewX(-35deg);
+}
+
+.mainMenu .navbar-brand img {
+    transform: skewX(35deg);
+}
+
+.mainMenu .navbar-nav .nav-item .nav-link {
+    padding: 0 10px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 50px;
+    color: #f1f1f1;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    position: relative;
+}
+
+.mainMenu .navbar-nav .nav-item .nav-link:hover {
+    background: #ffffff;
+    color: #222222;
+}
+
+
+.mainMenu .navbar-nav .nav-item .nav-link:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #e23e38;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+}
+
+.mainMenu .navbar-nav .nav-item .nav-link:hover:after {
+    width: 50%;
+}
+
+/***********************   Menu Part End   ************************/
+
+
+
+
+/***********************   Banner Part Start   ************************/
+
+.bannerItem {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 254px 0 117px;
+    position: relative;
+
+}
+
+
+.bannerItem:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.bannerText {
+    position: relative;
+    z-index: 99;
+}
+
+.bannerText h3 {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.bannerText h1 {
+    color: #e23e38;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 10px 0 17px;
+    position: relative;
+}
+
+.bannerText p {
+    color: #dddddd;
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 5px 30px;
+    position: relative;
+}
+
+.bannerText a {
+    padding: 10px 20px;
+    border: solid 1px #f1f1f1;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 11px;
+    margin-left: 11px;
+    transition: all linear .15s;
+    -webkit-transition: all linear .15s;
+    -moz-transition: all linear .15s;
+    -o-transition: all linear .15s;
+    -ms-transition: all linear .15s;
+}
+
+.bannerText a:hover {
+    background: #e23e38;
+    border: solid 1px #e23e38;
+}
+
+
+.bannerText h1,
+.bannerText h3,
+.bannerText p {
+    position: relative;
+}
+
+.bannerShape h1:after {
+    position: absolute;
+    content: '';
+    left: -5px;
+    top: -16px;
+    width: 3px;
+    height: 203px;
+    background: #e23e38;
+}
+
+.bannerShape h1:before {
+    position: absolute;
+    content: '';
+    right: -2px;
+    top: -16px;
+    width: 3px;
+    height: 203px;
+    background: #e23e38;
+}
+
+.bannerShape h3:after {
+    position: absolute;
+    content: '';
+    left: -5px;
+    top: 17px;
+    width: 164px;
+    height: 3px;
+    background: #e23e38;
+    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.bannerShape h3:before {
+    position: absolute;
+    content: '';
+    right: -2px;
+    top: 17px;
+    width: 109px;
+    height: 3px;
+    background: #e23e38;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+}
+
+.bannerShape p:after {
+    position: absolute;
+    content: '';
+    left: -5px;
+    bottom: -25px;
+    width: 62px;
+    height: 3px;
+    background: #e23e38;
+}
+
+.bannerShape p:before {
+    position: absolute;
+    content: '';
+    right: -2px;
+    bottom: -25px;
+    width: 31px;
+    height: 3px;
+    background: #e23e38;
+}
+
+#bannerPart .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+
+}
+
+#bannerPart .slick-dots li button {
+    font-size: 0;
+    background: rgba(226, 62, 56, 0);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 1px #ffffff;
+    margin-right: 10px;
+}
+
+#bannerPart .slick-dots li.slick-active button {
+    border: solid 1px #e23e38;
+    background: rgba(226, 62, 56, 1);
+}
+
+
+/***********************   Banner Part End   ************************/
+
+
+/***********************   About Part Start   ************************/
+
+
+#aboutPart {
+    padding: 80px 0;
+}
+
+.aboutVideo {
+    position: relative;
+}
+
+.aboutVideo .overlay {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.aboutVideo .overlay a {
+    height: 48px;
+    width: 48px;
+    background: #e23e38;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    color: rgba(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aboutVideo .overlay a i:hover {
+    transform: scale(1.2);
+}
+
+.aboutText h2 {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: -2px;
+    font-weight: 400;
+}
+
+.aboutText p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #444444;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 10px;
+
+}
+
+.aboutText p span {
+    display: block;
+    margin-top: 24px;
+}
+
+/***********************   About Part End   ************************/
+
+/***********************     Gallery Part Start ************************/
+
+.galleryHead {
+    margin-bottom: 25px;
+}
+
+.galleryHead h2 {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: -2px;
+    font-weight: 400;
+}
+
+.galleryBG {
+    background: url(../images/gallery-banner.jpg);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.galleryBG:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.galleryImg {
+    position: relative;
+}
+
+.galleryImg .overlay {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(226, 62, 56, 0.5);
+    border: solid 5px rgba(255, 255, 255, .5);
+    transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.galleryImg:hover .overlay {
+    transform: scale(1);
+}
+
+.galleryImg .overlay a i {
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.galleryMar {
+    margin-bottom: 30px;
+}
+
+/***********************     Gallery Part End ************************/
+
+
+/***********************   Team Part Start   ************************/
+
+
+
+.teamHead h2 {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: -2px;
+    font-weight: 400;
+}
+
+#teamPart {
+    padding: 80px 0;
+}
+
+.teamInner {
+    margin-top: 72px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.teamImg {
+    position: relative;
+}
+
+.teamImg .overlay {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(226, 62, 56, 0.5);
+    border: solid 5px rgba(255, 255, 255, .5);
+    transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.teamImg .overlay ul {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.teamImg .overlay ul li a {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+}
+
+.teamImg .overlay ul li a:hover {
+    background: #ffffff;
+    color: #1da0f2;
+}
+
+.teamText h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #222222;
+    margin-top: 20px;
+}
+
+.teamText h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    margin-top: -3px;
+}
+
+.teamText p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #444444;
+    padding: 15px 5px 0;
+    transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.teamInner:hover .teamImg .overlay {
+    transform: scale(1);
+}
+
+.teamInner:hover {
+    transform: translateY(-42px);
+}
+
+.teamInner:hover .teamText p {
+    transform: scale(1);
+}
+
+.teamInner:hover .teamText {
+    border: solid 1px rgba(221, 221, 221, 0.6);
+}
+
+/***********************   Team Part End   ************************/
+
+/***********************    Testimonial Part Start  ************************/
+
+.testimonialHead {
+    margin-bottom: 25px;
+}
+
+.testimonialHead h2 {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: -2px;
+    font-weight: 400;
+}
+
+.testimonialBanner {
+    padding: 30px 0px 80px;
+    background: url(../images/tesimonial-background.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonialBanner:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.testimonialBanner .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -34px;
+
+}
+
+.testimonialBanner .slick-dots li button {
+    font-size: 0;
+    background: rgba(226, 62, 56, 0);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 1px #ffffff;
+    margin-right: 10px;
+}
+
+.testimonialBanner .slick-dots li.slick-active button {
+    border: solid 1px #e23e38;
+    background: rgba(226, 62, 56, 1);
+}
+
+.testimonialInnerHeadImg h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.testimonialInnerHeadImg h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.testimonialInnerHeadImg i {
+    font-size: 14px;
+    color: #e23e38;
+}
+
+.testimonialInnerText p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #dddddd;
+}
+
+/***********************    Testimonial Part End  ************************/
+
+
+/***********************     Membership Part Start ************************/
+
+#membershipPart {
+    padding: 80px 0;
+}
+
+.membershipHead {
+    margin-bottom: 25px;
+}
+
+.membershipHead h2 {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: -2px;
+    font-weight: 400;
+}
+
+.membershipInner h4 {
+    padding: 20px 0;
+    background: #dddddd;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.membershipInner h3 {
+    padding: 40px 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.membershipInner h3:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.membershipInner h3 span {
+    font-size: 29px;
+}
+
+.membershipInner ul {
+    padding-top: 13px;
+    background: #f1f1f1;
+    padding-bottom: 27px;
+}
+
+.membershipInner ul li {
+    padding-top: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+}
+
+.membershipInner a {
+    background: #dddddd;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222222;
+    text-transform: uppercase;
+    display: block;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.membershipInner .priceBg1 {
+    background: url(../images/price-bg-1.jpg)no-repeat center;
+    background-size: cover;
+}
+
+.membershipInner .priceBg2 {
+    background: url(../images/price-bg-2.jpg)no-repeat center;
+    background-size: cover;
+}
+
+.membershipInner .priceBg3 {
+    background: url(../images/price-bg-3.jpg)no-repeat center;
+    background-size: cover;
+}
+
+.membershipInner:hover h4,
+.membershipInner:hover a {
+    background: #e23e38;
+    color: #ffffff;
+}
+
+/***********************     Membership Part End ************************/
+
+
+
+/***********************   Counter Part Start   ************************/
+
+#counterPart {
+    padding: 45px 0;
+    background: url(../images/counter-background.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#counterPart::after {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#counterPart h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#counterPart p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+/***********************   Counter Part End   ************************/
+
+
+/***********************   Classes Part Start   ************************/
+
+#classesPart {
+    padding: 80px 0;
+}
+
+.classHead {
+    margin-bottom: 25px;
+}
+
+.classHead h2 {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: -2px;
+    font-weight: 400;
+}
+
+.classMenu {
+    height: 50px;
+    background: #f1f1f1;
+}
+
+.classMenu li {
+    width: 16.66%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.classMenu li a {
+    padding: 0 !important;
+    border-radius: 0;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.classMenu li a.active {
+    color: #ffffff;
+    border-radius: 0;
+    background: #e23e38 !important;
+}
+
+.classText ul li {
+    width: 19.65%;
+    background: #f1f1f1;
+    margin-bottom: 5px;
+    float: left;
+    padding: 50px 0;
+    margin-right: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+
+}
+
+.classText ul li:nth-child(5),
+.classText ul li:nth-child(10) {
+    margin-right: 0;
+}
+
+.classText ul li h6 {
+    color: #222222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: -10px;
+}
+
+.classText ul li i {
+    color: #444444;
+    font-size: 50px;
+
+}
+
+.classText ul li p {
+    color: #444444;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.classText ul li:hover {
+    background: #e23e38;
+    transform: scale(1.1);
+}
+
+.classText ul li:hover h6,
+.classText ul li:hover p,
+.classText ul li:hover i {
+    color: #f1f1f1;
+}
+
+/***********************   Classes Part End   ************************/
+
+
+/***********************    Client Part Start  ************************/
+
+#clientPart {
+    margin-bottom: 80px;
+}
+
+.clientImg img {
+    padding: 0px 15px;
+    background: #f1f1f1;
+}
+
+
+.clientParrow {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    color: #444;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.clientNarrow {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    color: #444;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+
+}
+
+.clientParrow:hover,
+.clientNarrow:hover {
+    color: #e23e38;
+}
+
+/***********************    Client Part End  ************************/
+
+/***********************     Footer Part Start ************************/
+
+.footerLogo {
+    padding: 30px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+#footerPart {
+    background: url(../images/footer-banner.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+#footerPart:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: -1;
+}
+
+.footerLeftHead h4 {
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.footerText {
+    padding: 30px 0px;
+}
+
+.footerLeft ul li {
+    color: #dddddd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.footerTwitter h4 {
+    font-size: 13px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.footerTwitter p {
+    padding-left: 30px;
+    position: relative;
+    color: #dddddd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.footerTwitter p i {
+    font-size: 20px;
+    color: #1da1f2;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.footerFlicker ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footerFlicker ul li {
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+
+.footerFlicker h4 {
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.footerContact h4 {
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.footerContact p {
+    padding-left: 20px;
+    position: relative;
+    color: #dddddd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.footerContact p i {
+    font-size: 13px;
+    color: #e23e38;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.footerContact h5 {
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.footerContact a {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffffff;
+    text-align: center;
+    line-height: 27px;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 16px;
+    transition: all linear .1s;
+    -webkit-transition: all linear .1s;
+    -moz-transition: all linear .1s;
+    -o-transition: all linear .1s;
+    -ms-transition: all linear .1s;
+}
+
+.footerContact a:hover {
+    border: solid 1px #e23e38;
+    background: #e23e38;
+}
+
+.footerCopyright {
+    border-top: 1px solid #ffffff;
+}
+
+.footerCopyright p {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 53px;
+}
+.footerCopyright p span {
+    color: #e23e38;
+    text-transform: uppercase;
+}
+
+/***********************     Footer Part End ************************/
+/***********************      ************************/
+/***********************      ************************/
