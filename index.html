@@ -12,55 +12,56 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/venobox.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".mainMenu" data-offset="150">
 
-    <!----------------------  Menu Part Start  ---------------------->
+    <!--        Menu Part Start        -->
 
-    <nav class="navbar navbar-expand-lg p-0 mainMenu">
+    <nav class="navbar navbar-expand-md p-0 mainMenu">
         <div class="container px-lg-0">
             <a class="navbar-brand py-lg-0" href="#">
-                <img src="images/logo.png" alt="logo">
+                <img src="images/logo.png" class="img-fluid" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bannerPart">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us </a>
+                        <a class="nav-link" href="#aboutPart">About Us </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Plans</a>
+                        <a class="nav-link" href="#galleryPart">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
+                        <a class="nav-link" href="#teamPart">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link" href="#testimonialPart">Testimonial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonial</a>
+                        <a class="nav-link" href="#membershipPart">Plans</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#footerPart">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!----------------------  Menu Part End  ------------------------>
+    <!--        Menu Part End        -->
 
 
 
 
-    <!----------------------  Banner Part Start  ---------------------->
+    <!--        Banner Part Start        -->
 
     <section id='bannerPart'>
         <div class="bannerItem" style="background: url(images/banner-1.jpg)">
@@ -107,14 +108,14 @@
         </div>
     </section>
 
-    <!----------------------  Banner Part End  ---------------------->
+    <!--        Banner Part End        -->
 
-    <!----------------------  About Part Start  ---------------------->
+    <!--        About Part Start        -->
 
     <section id='aboutPart'>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-1 order-lg-0">
                     <div class="aboutVideo">
                         <img src="images/video_pic.jpg" class="w-100 img-fluid" alt="About Video">
                         <div class="overlay">
@@ -123,7 +124,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-0 order-lg-1">
                     <div class="aboutText text-center">
                         <h2>About Us</h2>
                         <img src="images/spoon.png" alt="shape">
@@ -138,10 +139,10 @@
         </div>
     </section>
 
-    <!----------------------  About Part End  ---------------------->
+    <!--        About Part End        -->
 
 
-    <!----------------------  Gallery Part Start  ---------------------->
+    <!--        Gallery Part Start        -->
 
     <section id="galleryPart">
         <div class="container px-lg-0">
@@ -157,7 +158,7 @@
         <div class="galleryBG">
             <div class="container px-lg-0">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="galleryImg galleryMar">
                             <img src="images/gallery-1.jpg" class="w-100 img-fluid" alt="">
                             <div class="overlay">
@@ -171,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="galleryImg galleryMar">
                             <img src="images/gallery-2.jpg" class="w-100 img-fluid" alt="">
                             <div class="overlay">
@@ -185,7 +186,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="galleryImg galleryMar">
                             <img src="images/gallery-3.jpg" class="w-100 img-fluid" alt="">
                             <div class="overlay">
@@ -204,10 +205,10 @@
         </div>
     </section>
 
-    <!----------------------  Gallery Part End  ---------------------->
+    <!--        Gallery Part End        -->
 
 
-    <!----------------------  Team Part Start  ---------------------->
+    <!--        Team Part Start        -->
 
     <section id="teamPart">
         <div class="container px-lg-0">
@@ -220,7 +221,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3">
                     <div class="teamInner">
                         <div class="teamImg">
                             <img src="images/team-1.jpg" class="w-100 img-fluid" alt="">
@@ -239,7 +240,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3">
                     <div class="teamInner">
                         <div class="teamImg">
                             <img src="images/team-2.jpg" class="w-100 img-fluid" alt="">
@@ -258,7 +259,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3">
                     <div class="teamInner">
                         <div class="teamImg">
                             <img src="images/team-3.jpg" class="w-100 img-fluid" alt="">
@@ -277,7 +278,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3">
                     <div class="teamInner">
                         <div class="teamImg">
                             <img src="images/team-4.jpg" class="w-100 img-fluid" alt="">
@@ -300,10 +301,10 @@
         </div>
     </section>
 
-    <!----------------------  Team Part End  ---------------------->
+    <!--        Team Part End        -->
 
 
-    <!----------------------  Testimonial Part Start  ---------------------->
+    <!--        Testimonial Part Start        -->
 
     <section id="testimonialPart">
         <div class="container">
@@ -323,12 +324,12 @@
                 <div class="row testimonialSlider">
                     <div class="col-lg-6">
                         <div class="row">
-                            <div class="col-lg-2 pr-0">
+                            <div class="col-lg-2 pr-0 col-4">
                                 <div class="testimonialInnerImg">
                                     <img src="images/client-1.jpg" alt="Client-1">
                                 </div>
                             </div>
-                            <div class="col-lg-10">
+                            <div class="col-lg-10 col-8">
                                 <div class="testimonialInnerHeadImg">
                                     <h4>Mridul Chakrabarty</h4>
                                     <h5>Gymnast</h5>
@@ -351,12 +352,12 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="row">
-                            <div class="col-lg-2 pr-0">
+                            <div class="col-lg-2 pr-0 col-4">
                                 <div class="testimonialInnerImg">
                                     <img src="images/client-2.jpg" alt="Client-1">
                                 </div>
                             </div>
-                            <div class="col-lg-10">
+                            <div class="col-lg-10 col-8">
                                 <div class="testimonialInnerHeadImg">
                                     <h4>Mridul Chakrabarty</h4>
                                     <h5>Gymnast</h5>
@@ -379,12 +380,12 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="row">
-                            <div class="col-lg-2 pr-0">
+                            <div class="col-lg-2 pr-0 col-4">
                                 <div class="testimonialInnerImg">
                                     <img src="images/client-1.jpg" alt="Client-1">
                                 </div>
                             </div>
-                            <div class="col-lg-10">
+                            <div class="col-lg-10 col-8">
                                 <div class="testimonialInnerHeadImg">
                                     <h4>Anamika Rajbongshi</h4>
                                     <h5>Gymnast</h5>
@@ -411,10 +412,10 @@
 
     </section>
 
-    <!----------------------  Testimonial Part End  ---------------------->
+    <!--        Testimonial Part End        -->
 
 
-    <!----------------------  Membership Part Start  ---------------------->
+    <!--        Membership Part Start        -->
 
     <section id="membershipPart">
         <div class="container px-lg-0">
@@ -427,8 +428,8 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-lg-4">
-                    <div class="membershipInner priceNotFocus">
+                <div class="col-md-4">
+                    <div class="membershipInner ">
                         <h4>Regular Membership</h4>
                         <h3 class="priceBg1">$ 10 <span>/month</span></h3>
                         <ul>
@@ -441,8 +442,8 @@
                         <a href="#">Join Now</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="membershipInner priceFocus">
+                <div class="col-md-4">
+                    <div class="membershipInner">
                         <h4>Professional Membership</h4>
                         <h3 class="priceBg2">$ 15 <span>/month</span></h3>
                         <ul>
@@ -455,8 +456,8 @@
                         <a href="#">Join Now</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="membershipInner priceNotFocus">
+                <div class="col-md-4">
+                    <div class="membershipInner ">
                         <h4>Standard Membership</h4>
                         <h3 class="priceBg3">$ 20 <span>/month</span></h3>
                         <ul>
@@ -473,10 +474,10 @@
         </div>
     </section>
 
-    <!----------------------  Membership Part End  ---------------------->
+    <!--        Membership Part End        -->
 
 
-    <!----------------------  Counter Part Start  ---------------------->
+    <!--        Counter Part Start        -->
 
     <section id="counterPart">
         <div class="container px-lg-0">
@@ -505,10 +506,10 @@
         </div>
     </section>
 
-    <!----------------------  Counter Part End  ---------------------->
+    <!--        Counter Part End        -->
 
 
-    <!----------------------  Classes Part Start  ---------------------->
+    <!--        Classes Part Start        -->
 
     <section id="classesPart">
         <div class="container px-lg-0 text-center">
@@ -558,7 +559,7 @@
                                 <li>
                                     <h6>Cycling</h6>
                                     <i class="flaticon-bike"></i>
-                                    <p>01:00p.m. - 03:00p.m.</p>
+                                    <p>01:00 p.m. - 03:00 p.m.</p>
                                 </li>
                                 <li>
                                     <h6>Boxing</h6>
@@ -828,7 +829,7 @@
                                 <li>
                                     <h6>Cycling</h6>
                                     <i class="flaticon-bike"></i>
-                                    <p>01:00p.m. - 03:00p.m.</p>
+                                    <p>01:00 p.m. - 03:00 p.m.</p>
                                 </li>
                                 <li>
                                     <h6>Yoga</h6>
@@ -876,51 +877,52 @@
         </div>
     </section>
 
-    <!----------------------  Classes Part End  ---------------------->
+    <!--        Classes Part End        -->
 
 
-    <!----------------------  Client Part Start  ---------------------->
+    <!--        Client Part Start        -->
 
     <section id="clientPart">
         <div class="container px-lg-0">
+           <h2 style="display: none">Client</h2>
             <div class="row clientSlide">
                 <div class="col">
                     <div class="clientImg">
-                        <img src="images/t1.png" Class="img-fluid w-100" alt="Client 1">
+                        <img src="images/t1.png" Class="img-fluid " alt="Client 1">
                     </div>
                 </div>
                 <div class="col">
                     <div class="clientImg">
-                        <img src="images/t2.png" Class="img-fluid w-100" alt="Client 2">
+                        <img src="images/t2.png" Class="img-fluid " alt="Client 2">
                     </div>
                 </div>
                 <div class="col">
                     <div class="clientImg">
-                        <img src="images/t3.png" Class="img-fluid w-100" alt="Client 3">
+                        <img src="images/t3.png" Class="img-fluid " alt="Client 3">
                     </div>
                 </div>
                 <div class="col">
                     <div class="clientImg">
-                        <img src="images/t4.png" Class="img-fluid w-100" alt="Client 4">
+                        <img src="images/t4.png" Class="img-fluid " alt="Client 4">
                     </div>
                 </div>
                 <div class="col">
                     <div class="clientImg">
-                        <img src="images/t5.png" Class="img-fluid w-100" alt="Client 5">
+                        <img src="images/t5.png" Class="img-fluid " alt="Client 5">
                     </div>
                 </div>
                 <div class="col">
                     <div class="clientImg">
-                        <img src="images/t3.png" Class="img-fluid w-100" alt="Client 6">
+                        <img src="images/t3.png" Class="img-fluid " alt="Client 6">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!----------------------  Client Part End  ---------------------->
+    <!--        Client Part End        -->
 
-    <!----------------------  Footer Part Start  ---------------------->
+    <!--        Footer Part Start        -->
 
     <footer id="footerPart">
         <div class="row mx-0 text-center">
@@ -931,8 +933,8 @@
             </div>
         </div>
         <div class="container footerText">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="row mr-0">
+                <div class="col-lg-3 col-md-6">
                     <div class="footerLeft">
                         <div class="row">
                             <div class="col-lg-12">
@@ -940,7 +942,7 @@
                                     <h4>Openning Hours</h4>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-4">
                                 <ul>
                                     <li>Monday</li>
                                     <li>Tuesday</li>
@@ -952,7 +954,7 @@
                                     <li>Holiday</li>
                                 </ul>
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-8">
                                 <ul>
                                     <li>05:00 A.M. - 11:00 P.M</li>
                                     <li>05:00 A.M. - 11:00 P.M</li>
@@ -967,7 +969,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="footerTwitter">
                         <div class="row">
                             <div class="col-lg-12">
@@ -985,7 +987,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="footerFlicker">
                         <div class="row">
                             <div class="col-lg-12">
@@ -1010,7 +1012,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="footerContact">
                         <h4>Contact</h4>
                         <div class="row">
@@ -1043,9 +1045,15 @@
         </div>
     </footer>
 
-    <!----------------------  Footer Part End  ---------------------->
-    <!----------------------    ---------------------->
-    <!----------------------    ---------------------->
+    <!--        Footer Part End        -->
+    
+    <!--        Back To Top Start        -->
+
+    <div class="back2top">
+        <i class="fas fa-caret-square-up"></i>
+    </div>
+
+    <!--        Back To Top End        -->
 
 
 
